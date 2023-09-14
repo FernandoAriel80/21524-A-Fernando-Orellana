@@ -31,4 +31,8 @@ Despues modificamos el package.json en la parte de scripts y se la remplazamos p
 
   y ejecutamos el programa con: "npm run dev"
 
+  **anotaciones**
+
+Deje notas comentadas por el programa de funciones y metedos que no pude utilizar porque no supe como obtener el valor de un id de las publicaciones porque me decia que esperaba valores nulos y no los pude implementar.
+
   

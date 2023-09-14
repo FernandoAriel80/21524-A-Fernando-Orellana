@@ -1,0 +1,41 @@
+<%-include("partials/header") %>
+<link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="vh-100">
+    
+<%-include("partials/navbar")%>
+
+<div class="container" style="margin: 100px;">
+    <div class="row">
+        <div class="col"> 
+            <div style="margin-bottom: 50px;">
+                <h1 class="text-center">inicia sesion admin</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="align-self-center">
+            <div class="col-md-4 mx-auto">
+                <form id="formLogin">
+                    <div class="form-outline mb-4">
+                        <input type="text" id="usuario" class="form-control" />
+                        <label class="form-label" for="form2Example1">Usuario</label>
+                    </div>
+                
+                    <div class="form-outline mb-4">
+                        <input type="password" id="clave" class="form-control" />
+                        <label class="form-label" for="form2Example2">clave</label>
+                    </div>
+                
+                    <button type="submit" class="btn btn-secondary btn-block mb-4">Inicia</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="/js/login.js" type="module"></script>
+
+<%-include("partials/footer")%>

@@ -6,6 +6,10 @@ const Publicacion = sequelize.define('Publicacion', {
         primaryKey: true,
         autoIncrement: true
     },
+    autor: {
+        type: DataTypes.STRING(255),
+        allowNull: false
+    },
     titulo: {
         type: DataTypes.STRING(255),
         allowNull: false

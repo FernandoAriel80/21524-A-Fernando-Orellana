@@ -1,7 +1,7 @@
 
 
 const { Router } = require('express');
-const { getPosts, newPost,getUsuario/*, updatePost, deletePost*/} = require('../controllers/blog.controllers');
+const { getPosts, newPost} = require('../controllers/blog.controllers');
 const router = Router()
 
 // =====================================
@@ -9,34 +9,20 @@ const router = Router()
 // =====================================
 
 router.get('/', (req, res) => {
-    res.render('inicio')
-})
-router.get('/index', (req, res) => {
     res.render('index')
 })
 
-router.get('/login', (req, res) => {
-    res.render('login')
-})
-
-router.get('/crea', (req, res) => {
-    res.render('crea')
+router.get('/admin', (req, res) => {
+    res.render('admin')
 })
 
 // =====================================
 //      RUTAS PARA MANEJAR DATOS
 // =====================================
 
-router.get('/usuario', getUsuario)
 
 router.post('/publicacion', newPost)
 
 router.get('/publicaciones', getPosts)
-
-/*
-router.put('/actualizar/:id', updatePost)
-
-router.delete('/eliminar/:id', deletePost)
-*/
 
 module.exports = router;
